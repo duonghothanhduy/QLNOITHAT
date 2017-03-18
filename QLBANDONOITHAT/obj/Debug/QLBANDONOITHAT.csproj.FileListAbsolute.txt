@@ -12,3 +12,15 @@ D:\baitap\btC#\DETAI_CNPM\QLBANDONOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT
 D:\baitap\btC#\DETAI_CNPM\QLBANDONOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.form_mathang.resources
 D:\baitap\btC#\DETAI_CNPM\QLBANDONOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.THEMKH.resources
 D:\baitap\btC#\DETAI_CNPM\QLBANDONOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.FORM_KHACHHANG.resources
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\bin\Debug\QLBANDONOITHAT.exe.config
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.exe
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.pdb
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.csprojResolveAssemblyReference.cache
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.BANHANG.resources
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.BATDAU.resources
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.FORM_KHACHHANG.resources
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.THEMKH.resources
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.form_mathang.resources
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.Properties.Resources.resources
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.csproj.GenerateResource.Cache
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.exe.licenses

@@ -22,7 +22,7 @@ namespace QLBANDONOITHAT.LQTOSQL
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QL_NOITHAT")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QLNOTTHAT")]
 	public partial class dbQLNOITHATDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -84,7 +84,7 @@ namespace QLBANDONOITHAT.LQTOSQL
     #endregion
 		
 		public dbQLNOITHATDataContext() : 
-				base(global::QLBANDONOITHAT.Properties.Settings.Default.QL_NOITHATConnectionString1, mappingSource)
+				base(global::QLBANDONOITHAT.Properties.Settings.Default.QLNOTTHATConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

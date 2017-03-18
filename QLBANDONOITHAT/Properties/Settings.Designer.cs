@@ -44,5 +44,16 @@ namespace QLBANDONOITHAT.Properties {
                 return ((string)(this["QL_NOITHATConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=lightingwindows.vnso.vn\\MSSQLSERVER2014;Initial Catalog=QLNOTTHAT;Per" +
+            "sist Security Info=True;User ID=0939569163;Password=Backhome1")]
+        public string QLNOTTHATConnectionString {
+            get {
+                return ((string)(this["QLNOTTHATConnectionString"]));
+            }
+        }
     }
 }
