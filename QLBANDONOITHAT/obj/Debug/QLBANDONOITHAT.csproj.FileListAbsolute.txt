@@ -24,3 +24,5 @@ C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.fo
 C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.Properties.Resources.resources
 C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.csproj.GenerateResource.Cache
 C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\obj\Debug\QLBANDONOITHAT.exe.licenses
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\bin\Debug\QLBANDONOITHAT.exe
+C:\Users\duong\Desktop\Doan\QLNOITHAT\QLBANDONOITHAT\bin\Debug\QLBANDONOITHAT.pdb

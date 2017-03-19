@@ -95,6 +95,8 @@
     </Compile>
     <Compile Include="Class_banhang.cs" />
     <Compile Include="Class_Checker.cs" />
+    <Compile Include="Class_conext.cs" />
+    <Compile Include="Class_dangnhap.cs" />
     <Compile Include="class_MatHang.cs" />
     <Compile Include="FORM_KHACHHANG.cs">
       <SubType>Form</SubType>

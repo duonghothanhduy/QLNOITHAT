@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLNOTTHAT" Class="dbQLNOITHATDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=lightingwindows.vnso.vn\MSSQLSERVER2014;Initial Catalog=QLNOTTHAT;Persist Security Info=True;User ID=0939569163" SettingsObjectName="QLBANDONOITHAT.Properties.Settings" SettingsPropertyName="QLNOTTHATConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_NOITHAT" Class="dbQLNOITHATDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-DFC2SM5\DUY_MSSQL;Initial Catalog=QL_NOITHAT;Persist Security Info=True;User ID=sa" SettingsObjectName="QLBANDONOITHAT.Properties.Settings" SettingsPropertyName="QL_NOITHATConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BAOHANH" Member="BAOHANHs">
     <Type Name="BAOHANH">
       <Column Name="SOPBH" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -177,5 +177,14 @@
     <Parameter Name="SOLUONGNHAP" Parameter="sOLUONGNHAP" Type="System.Int32" DbType="Int" />
     <Parameter Name="MAMH" Parameter="mAMH" Type="System.String" DbType="VarChar(15)" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.PROC_BANHANG" Method="PROC_BANHANG">
+    <ElementType Name="PROC_BANHANGResult">
+      <Column Name="SOHD" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MAMH" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TENMH" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="SOLUONGMUA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DONGIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
   </Function>
 </Database>

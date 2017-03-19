@@ -14,9 +14,11 @@ namespace QLBANDONOITHAT
 {
     public partial class BATDAU : System.Windows.Forms.Form
     {
+        Class_dangnhap DN;
         public BATDAU()
         {
             InitializeComponent();
+            DN = new Class_dangnhap();
             txt_dangnhap.Visible = false;
             txtpass.Visible = false;
             bt_dangnhap.Visible = false;
@@ -26,10 +28,7 @@ namespace QLBANDONOITHAT
             lb_pass.Visible = false;
         }
 
-        //khai bao database
-        dbQLNOITHATDataContext data = new dbQLNOITHATDataContext();
-
-        // vị bang~ chọn chức năng hình tròn
+        // vị tri bang~ chọn chức năng hình tròn
         private void tileItem11_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
             radialMenu1.ShowPopup(new Point(675, 370));
@@ -45,7 +44,7 @@ namespace QLBANDONOITHAT
         //mỡ form mặt hàng
         private void tileItem14_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
-            if (phanquyen == 2)
+            if (DN.capphanquyen() == 2)
             {
                 form_mathang f = new form_mathang();
                 f.Show();
@@ -81,58 +80,14 @@ namespace QLBANDONOITHAT
         }
 
         //code nhập thông tin đăng nhập
-        public int t = 0;
-        public int phanquyen=0;
-        public static string manv = "";
         private void bt_dangnhap_Click_1(object sender, EventArgs e)
         {
-             string user = txt_dangnhap.Text;
-            string matkhau = txtpass.Text;
-
-            LOGIN tam = data.LOGINs.SingleOrDefault(a => a.TENDN == user && a.PASS == matkhau);
-
-            
-
-            if(tam==null)
-            {
-                t = 0;
-            }
-            else
-            {
-                t = 1;
-            }
-
-            if(t==0)
-            {
-                lb_thongbao.Visible = true;
-                lb_thongbao.Text = "Sai Tên Đăng Nhập hoặc Mật Khẩu !";
-                txt_dangnhap.Text="";
-                txtpass.Text="";
-            }
-          
-            if(t==1)
-            {
-                    manv = tam.MANV;
-                    phanquyen = int.Parse(tam.PHANQUYEN.ToString());
-                    txt_dangnhap.Visible = false;
-                    txtpass.Visible = false;
-                    bt_dangnhap.Visible = false;
-                    lb_thongbao.Visible = false;
-                    lb_user.Visible = false;
-                    lb_pass.Visible = false;
-                    string[] chuoi = tam.GHICHU.Split('-');
-                    for (int i = 0; i < chuoi.Length;i++ )
-                    {
-                        tli_dangnhap.Text += chuoi[i] +"\n";
-                    }
-                    
-                    tli_nutdangnhap.Text = "Đăng Xuất";
-            }
+            DN.dangnhap(this,txt_dangnhap.Text,txtpass.Text);
         }
 
         private void tileItem16_ItemClick(object sender, DevExpress.XtraEditors.TileItemEventArgs e)
         {
-            if (phanquyen==2)
+            if (DN.capphanquyen()==2)
             {
                 FORM_KHACHHANG f = new FORM_KHACHHANG();
                 f.Show();

@@ -30,19 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BANHANG));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bt_xacnhan = new System.Windows.Forms.Button();
             this.txt_sdt = new DevExpress.XtraEditors.TextEdit();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_tenkh = new DevExpress.XtraEditors.TextEdit();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_khachtra = new DevExpress.XtraEditors.TextEdit();
             this.lb_tongdongia = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.lb_khuyenmai = new DevExpress.XtraEditors.LabelControl();
+            this.lb_tiencantra = new DevExpress.XtraEditors.LabelControl();
+            this.lb_tienthua = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lb_thanhtoan = new System.Windows.Forms.Label();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -64,13 +65,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
-            this.bt_xacnhan = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_sdt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_tenkh.Properties)).BeginInit();
             this.panel6.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_khachtra.Properties)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gctrl_banhang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_banhang)).BeginInit();
@@ -94,6 +94,24 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(287, 652);
             this.panel2.TabIndex = 5;
+            // 
+            // bt_xacnhan
+            // 
+            this.bt_xacnhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_xacnhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
+            this.bt_xacnhan.FlatAppearance.BorderSize = 0;
+            this.bt_xacnhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_xacnhan.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bt_xacnhan.ForeColor = System.Drawing.Color.Black;
+            this.bt_xacnhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_xacnhan.Location = new System.Drawing.Point(207, 100);
+            this.bt_xacnhan.Name = "bt_xacnhan";
+            this.bt_xacnhan.Size = new System.Drawing.Size(73, 28);
+            this.bt_xacnhan.TabIndex = 13;
+            this.bt_xacnhan.Text = "Xac Nhan";
+            this.bt_xacnhan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_xacnhan.UseVisualStyleBackColor = false;
+            this.bt_xacnhan.Click += new System.EventHandler(this.bt_xacnhan_Click);
             // 
             // txt_sdt
             // 
@@ -151,13 +169,13 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
-            this.groupBox1.Controls.Add(this.textEdit1);
+            this.groupBox1.Controls.Add(this.txt_khachtra);
             this.groupBox1.Controls.Add(this.lb_tongdongia);
-            this.groupBox1.Controls.Add(this.labelControl12);
-            this.groupBox1.Controls.Add(this.labelControl13);
-            this.groupBox1.Controls.Add(this.labelControl14);
+            this.groupBox1.Controls.Add(this.lb_khuyenmai);
+            this.groupBox1.Controls.Add(this.lb_tiencantra);
+            this.groupBox1.Controls.Add(this.lb_tienthua);
             this.groupBox1.Controls.Add(this.labelControl9);
-            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.lb_thanhtoan);
             this.groupBox1.Controls.Add(this.labelControl8);
             this.groupBox1.Controls.Add(this.labelControl7);
             this.groupBox1.Controls.Add(this.labelControl6);
@@ -170,61 +188,62 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
-            // textEdit1
+            // txt_khachtra
             // 
-            this.textEdit1.Location = new System.Drawing.Point(166, 261);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Lavender;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Size = new System.Drawing.Size(105, 20);
-            this.textEdit1.TabIndex = 13;
+            this.txt_khachtra.Location = new System.Drawing.Point(173, 264);
+            this.txt_khachtra.Name = "txt_khachtra";
+            this.txt_khachtra.Properties.Appearance.BackColor = System.Drawing.Color.Lavender;
+            this.txt_khachtra.Properties.Appearance.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_khachtra.Properties.Appearance.Options.UseBackColor = true;
+            this.txt_khachtra.Properties.Appearance.Options.UseFont = true;
+            this.txt_khachtra.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txt_khachtra.Size = new System.Drawing.Size(105, 22);
+            this.txt_khachtra.TabIndex = 13;
+            this.txt_khachtra.EditValueChanged += new System.EventHandler(this.txt_khachtra_EditValueChanged);
             // 
             // lb_tongdongia
             // 
             this.lb_tongdongia.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb_tongdongia.Appearance.ForeColor = System.Drawing.Color.SteelBlue;
             this.lb_tongdongia.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.lb_tongdongia.Location = new System.Drawing.Point(191, 107);
+            this.lb_tongdongia.Location = new System.Drawing.Point(173, 102);
             this.lb_tongdongia.Name = "lb_tongdongia";
             this.lb_tongdongia.Size = new System.Drawing.Size(80, 19);
             this.lb_tongdongia.TabIndex = 12;
             this.lb_tongdongia.Text = "00000000";
             // 
-            // labelControl12
+            // lb_khuyenmai
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl12.Appearance.ForeColor = System.Drawing.Color.SteelBlue;
-            this.labelControl12.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl12.Location = new System.Drawing.Point(246, 157);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(25, 19);
-            this.labelControl12.TabIndex = 11;
-            this.labelControl12.Text = "0.0";
+            this.lb_khuyenmai.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_khuyenmai.Appearance.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lb_khuyenmai.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.lb_khuyenmai.Location = new System.Drawing.Point(173, 152);
+            this.lb_khuyenmai.Name = "lb_khuyenmai";
+            this.lb_khuyenmai.Size = new System.Drawing.Size(25, 19);
+            this.lb_khuyenmai.TabIndex = 11;
+            this.lb_khuyenmai.Text = "0.0";
             // 
-            // labelControl13
+            // lb_tiencantra
             // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl13.Appearance.ForeColor = System.Drawing.Color.SteelBlue;
-            this.labelControl13.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl13.Location = new System.Drawing.Point(191, 204);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(80, 19);
-            this.labelControl13.TabIndex = 10;
-            this.labelControl13.Text = "00000000";
+            this.lb_tiencantra.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_tiencantra.Appearance.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lb_tiencantra.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.lb_tiencantra.Location = new System.Drawing.Point(173, 204);
+            this.lb_tiencantra.Name = "lb_tiencantra";
+            this.lb_tiencantra.Size = new System.Drawing.Size(80, 19);
+            this.lb_tiencantra.TabIndex = 10;
+            this.lb_tiencantra.Text = "00000000";
             // 
-            // labelControl14
+            // lb_tienthua
             // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl14.Appearance.ForeColor = System.Drawing.Color.SteelBlue;
-            this.labelControl14.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl14.Location = new System.Drawing.Point(191, 308);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(80, 19);
-            this.labelControl14.TabIndex = 9;
-            this.labelControl14.Text = "00000000";
+            this.lb_tienthua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_tienthua.Appearance.ForeColor = System.Drawing.Color.SteelBlue;
+            this.lb_tienthua.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.lb_tienthua.Location = new System.Drawing.Point(173, 308);
+            this.lb_tienthua.Name = "lb_tienthua";
+            this.lb_tienthua.Size = new System.Drawing.Size(80, 19);
+            this.lb_tienthua.TabIndex = 9;
+            this.lb_tienthua.Text = "00000000";
             // 
             // labelControl9
             // 
@@ -238,14 +257,14 @@
             this.labelControl9.TabIndex = 8;
             this.labelControl9.Text = "Khách Hàng trả";
             // 
-            // label3
+            // lb_thanhtoan
             // 
-            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Location = new System.Drawing.Point(99, 381);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 73);
-            this.label3.TabIndex = 5;
+            this.lb_thanhtoan.Image = ((System.Drawing.Image)(resources.GetObject("lb_thanhtoan.Image")));
+            this.lb_thanhtoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lb_thanhtoan.Location = new System.Drawing.Point(99, 381);
+            this.lb_thanhtoan.Name = "lb_thanhtoan";
+            this.lb_thanhtoan.Size = new System.Drawing.Size(73, 73);
+            this.lb_thanhtoan.TabIndex = 5;
             // 
             // labelControl8
             // 
@@ -506,7 +525,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
             this.panel5.Controls.Add(this.button5);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
@@ -517,7 +536,7 @@
             // button5
             // 
             this.button5.AutoSize = true;
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(39)))), ((int)(((byte)(45)))));
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
@@ -528,24 +547,6 @@
             this.button5.TabIndex = 6;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // bt_xacnhan
-            // 
-            this.bt_xacnhan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_xacnhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(192)))), ((int)(((byte)(222)))));
-            this.bt_xacnhan.FlatAppearance.BorderSize = 0;
-            this.bt_xacnhan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_xacnhan.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_xacnhan.ForeColor = System.Drawing.Color.Black;
-            this.bt_xacnhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_xacnhan.Location = new System.Drawing.Point(207, 100);
-            this.bt_xacnhan.Name = "bt_xacnhan";
-            this.bt_xacnhan.Size = new System.Drawing.Size(73, 28);
-            this.bt_xacnhan.TabIndex = 13;
-            this.bt_xacnhan.Text = "Xac Nhan";
-            this.bt_xacnhan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_xacnhan.UseVisualStyleBackColor = false;
-            this.bt_xacnhan.Click += new System.EventHandler(this.bt_xacnhan_Click);
             // 
             // BANHANG
             // 
@@ -572,7 +573,7 @@
             this.panel6.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_khachtra.Properties)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gctrl_banhang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_banhang)).EndInit();
@@ -592,37 +593,37 @@
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraGrid.GridControl gctrl_banhang;
-        private DevExpress.XtraGrid.Views.Grid.GridView gv_banhang;
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl lb_tongdongia;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.LabelControl labelControl14;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label2;
-        private DevExpress.XtraEditors.TextEdit txt_tenkh;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox cbb_tenmh;
-        private DevExpress.XtraEditors.TextEdit txt_sdt;
-        private System.Windows.Forms.ComboBox cbb_sl;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private System.Windows.Forms.Button bt_chon;
-        private System.Windows.Forms.Button bt_xacnhan;
+        public System.Windows.Forms.Label label2;
+        public DevExpress.XtraEditors.TextEdit txt_tenkh;
+        public DevExpress.XtraEditors.TextEdit txt_sdt;
+        public System.Windows.Forms.Button bt_xacnhan;
+        public DevExpress.XtraGrid.GridControl gctrl_banhang;
+        public DevExpress.XtraGrid.Views.Grid.GridView gv_banhang;
+        public DevExpress.XtraEditors.LabelControl lb_tongdongia;
+        public System.Windows.Forms.ComboBox cbb_tenmh;
+        public System.Windows.Forms.ComboBox cbb_sl;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button bt_chon;
+        public DevExpress.XtraEditors.LabelControl lb_khuyenmai;
+        public DevExpress.XtraEditors.LabelControl lb_tiencantra;
+        public DevExpress.XtraEditors.TextEdit txt_khachtra;
+        public DevExpress.XtraEditors.LabelControl lb_tienthua;
+        public System.Windows.Forms.Label lb_thanhtoan;
 
 
     }

@@ -567,7 +567,7 @@
             // 
             this.lb_mamh.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb_mamh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_mamh.Location = new System.Drawing.Point(126, 202);
+            this.lb_mamh.Location = new System.Drawing.Point(126, 214);
             this.lb_mamh.Name = "lb_mamh";
             this.lb_mamh.Size = new System.Drawing.Size(159, 30);
             this.lb_mamh.TabIndex = 26;
@@ -743,7 +743,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button bt_them;
         private System.Windows.Forms.Button bt_xuatfile;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button bt_tiemkiemten;
@@ -772,22 +771,23 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button9;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private System.Windows.Forms.RadioButton rdb_m2;
-        private System.Windows.Forms.RadioButton rdb_cai;
         private System.Windows.Forms.Label label11;
-        private DevExpress.XtraEditors.TextEdit txt_noisx;
         private System.Windows.Forms.Label label8;
-        private DevExpress.XtraEditors.TextEdit txt_tenmh;
-        private System.Windows.Forms.Label lb_mamh;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
-        private DevExpress.XtraEditors.ComboBoxEdit cbb_loai;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button2;
-        private DevExpress.XtraGrid.GridControl gctrl_mathang;
-        private DevExpress.XtraGrid.Views.Grid.GridView gv_mathang;
-        private System.Windows.Forms.ComboBox cbb_timtheoten;
-        private System.Windows.Forms.ComboBox cbb_noisx;
+        public DevExpress.XtraGrid.GridControl gctrl_mathang;
+        public System.Windows.Forms.ComboBox cbb_timtheoten;
+        public System.Windows.Forms.ComboBox cbb_noisx;
+        public DevExpress.XtraGrid.Views.Grid.GridView gv_mathang;
+        public System.Windows.Forms.Button bt_them;
+        public System.Windows.Forms.RadioButton rdb_m2;
+        public System.Windows.Forms.RadioButton rdb_cai;
+        public DevExpress.XtraEditors.TextEdit txt_noisx;
+        public DevExpress.XtraEditors.TextEdit txt_tenmh;
+        public DevExpress.XtraEditors.ComboBoxEdit cbb_loai;
+        public System.Windows.Forms.Label lb_mamh;
     }
 }

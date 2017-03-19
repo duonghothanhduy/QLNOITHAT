@@ -22,7 +22,7 @@ namespace QLBANDONOITHAT.LQTOSQL
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QLNOTTHAT")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="QL_NOITHAT")]
 	public partial class dbQLNOITHATDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -84,7 +84,7 @@ namespace QLBANDONOITHAT.LQTOSQL
     #endregion
 		
 		public dbQLNOITHATDataContext() : 
-				base(global::QLBANDONOITHAT.Properties.Settings.Default.QLNOTTHATConnectionString, mappingSource)
+				base(global::QLBANDONOITHAT.Properties.Settings.Default.QL_NOITHATConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -254,6 +254,13 @@ namespace QLBANDONOITHAT.LQTOSQL
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sOLUONG_KHO, sOLUONGNHAP, mAMH);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.PROC_BANHANG")]
+		public ISingleResult<PROC_BANHANGResult> PROC_BANHANG()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<PROC_BANHANGResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -3710,6 +3717,104 @@ namespace QLBANDONOITHAT.LQTOSQL
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	public partial class PROC_BANHANGResult
+	{
+		
+		private string _SOHD;
+		
+		private string _MAMH;
+		
+		private string _TENMH;
+		
+		private System.Nullable<int> _SOLUONGMUA;
+		
+		private System.Nullable<double> _DONGIA;
+		
+		public PROC_BANHANGResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SOHD", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		public string SOHD
+		{
+			get
+			{
+				return this._SOHD;
+			}
+			set
+			{
+				if ((this._SOHD != value))
+				{
+					this._SOHD = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAMH", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		public string MAMH
+		{
+			get
+			{
+				return this._MAMH;
+			}
+			set
+			{
+				if ((this._MAMH != value))
+				{
+					this._MAMH = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TENMH", DbType="NVarChar(40)")]
+		public string TENMH
+		{
+			get
+			{
+				return this._TENMH;
+			}
+			set
+			{
+				if ((this._TENMH != value))
+				{
+					this._TENMH = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SOLUONGMUA", DbType="Int")]
+		public System.Nullable<int> SOLUONGMUA
+		{
+			get
+			{
+				return this._SOLUONGMUA;
+			}
+			set
+			{
+				if ((this._SOLUONGMUA != value))
+				{
+					this._SOLUONGMUA = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DONGIA", DbType="Float")]
+		public System.Nullable<double> DONGIA
+		{
+			get
+			{
+				return this._DONGIA;
+			}
+			set
+			{
+				if ((this._DONGIA != value))
+				{
+					this._DONGIA = value;
+				}
 			}
 		}
 	}

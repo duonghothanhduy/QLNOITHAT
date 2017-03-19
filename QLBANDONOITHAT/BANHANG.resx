@@ -159,7 +159,7 @@
         QmCC
 </value>
   </data>
-  <data name="label3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lb_thanhtoan.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAACupJREFUeF7VmglwE9cZx80xmXYwh82VkhaYpkOSYabNlARsfGEDLTMJnTThGigk

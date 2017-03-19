@@ -616,8 +616,7 @@
             this.tileItem15.BackgroundImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.Manual;
             this.tileItem15.BackgroundImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.Stretch;
             this.tileItem15.ContentAnimation = DevExpress.XtraEditors.TileItemContentAnimationType.ScrollRight;
-            this.tileItem15.CurrentFrameIndex = 1;
-            tileItemElement4.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileItemElement4.StretchVertical = true;
             tileItemElement4.Text = "";
             this.tileItem15.Elements.Add(tileItemElement4);
             tileItemFrame1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tileItemFrame1.BackgroundImage")));
@@ -690,7 +689,6 @@
             // 
             this.tileItem6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tileItem6.BackgroundImage")));
             this.tileItem6.BackgroundImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleRight;
-            this.tileItem6.CurrentFrameIndex = 1;
             tileItemElement10.Text = "";
             this.tileItem6.Elements.Add(tileItemElement10);
             tileItemFrame3.AnimateText = false;
@@ -880,17 +878,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraEditors.TileItem tileItem19;
-        private DevExpress.XtraEditors.TileItem tli_nutdangnhap;
         private DevExpress.XtraEditors.TileItem tileItem12;
         private DevExpress.XtraEditors.TileGroup tileGroup10;
         private DevExpress.XtraEditors.TileGroup tileGroup11;
-        private DevExpress.XtraEditors.TextEdit txtpass;
-        private DevExpress.XtraEditors.TextEdit txt_dangnhap;
-        private DevExpress.XtraEditors.LabelControl lb_pass;
-        private DevExpress.XtraEditors.LabelControl lb_user;
-        private DevExpress.XtraEditors.TileItem tli_dangnhap;
-        private DevExpress.XtraEditors.SimpleButton bt_dangnhap;
-        private DevExpress.XtraEditors.LabelControl lb_thongbao;
         private DevExpress.XtraBars.BarButtonItem barButtonItem13;
         private DevExpress.XtraBars.BarButtonItem barButtonItem14;
         private DevExpress.XtraBars.BarSubItem barSubItem1;
@@ -900,5 +890,13 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraBars.BarButtonItem barButtonItem15;
         private DevExpress.XtraBars.BarButtonItem barButtonItem16;
+        public DevExpress.XtraEditors.LabelControl lb_thongbao;
+        public DevExpress.XtraEditors.TextEdit txtpass;
+        public DevExpress.XtraEditors.TextEdit txt_dangnhap;
+        public DevExpress.XtraEditors.LabelControl lb_pass;
+        public DevExpress.XtraEditors.LabelControl lb_user;
+        public DevExpress.XtraEditors.SimpleButton bt_dangnhap;
+        public DevExpress.XtraEditors.TileItem tli_dangnhap;
+        public DevExpress.XtraEditors.TileItem tli_nutdangnhap;
     }
 }
